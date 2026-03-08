@@ -1,0 +1,263 @@
+/* Forcing local font usage to avoid remote code execution flag from Google */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  width: 320px;
+  padding: 15px;
+  margin: 0;
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  border: 1px solid #00f3ff;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+h3, h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #00f3ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 243, 255, 0.3);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 13px;
+  color: #a0aab2;
+  margin-bottom: 15px;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #c5c6c7;
+  margin-bottom: 15px;
+  background: rgba(0, 243, 255, 0.05);
+  padding: 8px;
+  border-left: 3px solid #00f3ff;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 243, 255, 0.3);
+  margin: 15px 0;
+}
+
+/* Cyberpunk Input Group */
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 243, 255, 0.5);
+  color: #00f3ff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.input-group input::placeholder {
+  color: rgba(0, 243, 255, 0.3);
+}
+
+.input-group input:focus {
+  border-color: #00f3ff;
+  box-shadow: 0 0 8px rgba(0, 243, 255, 0.4) inset;
+}
+
+.input-group button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background-color: transparent;
+  color: #00f3ff;
+  border: 1px solid #00f3ff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.input-group button:hover {
+  background-color: #00f3ff;
+  color: #0b0c10;
+  box-shadow: 0 0 10px #00f3ff;
+}
+
+/* Whitelist UI */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #00f3ff;
+}
+
+ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: rgba(255, 0, 60, 0.05);
+  border: 1px solid rgba(255, 0, 60, 0.3);
+  border-left: 3px solid #ff003c;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e0e0e0;
+  word-break: break-all;
+}
+
+li button {
+  background: transparent;
+  color: #ff003c;
+  border: 1px solid #ff003c;
+  cursor: pointer;
+  padding: 4px 10px;
+  margin-left: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+li button:hover {
+  background: #ff003c;
+  color: #0b0c10;
+  box-shadow: 0 0 8px #ff003c;
+}
+
+/* Cyberpunk Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: rgba(0, 243, 255, 0.5);
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-color: rgba(0, 243, 255, 0.1);
+  border-color: #00f3ff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px #00f3ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+  background-color: #00f3ff;
+  box-shadow: 0 0 5px #00f3ff;
+}
+
+/* Sharp sliders */
+.slider.round {
+  border-radius: 0; /* Remove roundness for cyberpunk feel */
+}
+
+.slider.round:before {
+  border-radius: 0;
+}
+
+#statusText {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Donation Button */
+.donation-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cyber-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #f7b731; /* Cyberpunk yellow/gold for support */
+  border: 1px solid #f7b731;
+  padding: 8px 20px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(247, 183, 49, 0.2);
+}
+
+.cyber-button:hover {
+  background-color: #f7b731;
+  color: #0b0c10;
+  box-shadow: 0 0 15px rgba(247, 183, 49, 0.8);
+}

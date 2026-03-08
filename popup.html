@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h3>Smart Mute</h3>
+    <label class="switch">
+      <input type="checkbox" id="toggleExtension">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <p id="statusText" style="text-align: right; margin-top: 10px; margin-bottom: 15px; font-weight: bold;"></p>
+  
+  <div class="setting-row">
+    <span id="allowDifferentSitesLabel">Permitir áudio de sites diferentes</span>
+    <label class="switch" style="transform: scale(0.8);">
+      <input type="checkbox" id="allowDifferentSitesToggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <hr>
+  <h4 id="exceptionsTitle">Exceções</h4>
+  <p id="exceptionsDesc">URLs ou domínios que <b>nunca</b> serão mutados automaticamente:</p>
+  
+  <div class="input-group">
+    <input type="text" id="whitelistInput" placeholder="Ex: youtube.com">
+    <button id="addButton">Add</button>
+  </div>
+  
+  <ul id="whitelistUl"></ul>
+  
+  <div class="donation-container">
+    <a href="https://buymeacoffee.com/henriwasd" target="_blank" class="cyber-button" title="Buy me a coffee">
+      <span id="supportButton">SUPPORT THE DEVS</span> <span style="font-size: 16px;">☕</span>
+    </a>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "extensionName": {
+    "message": "Smart Mute Same-Site Tabs",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Mutar automaticamente outras abas do mesmo site quando uma nova começa a tocar som, com lista de exceções.",
+    "description": "Description of the extension"
+  },
+  "statusActive": {
+    "message": "ATIVO"
+  },
+  "statusInactive": {
+    "message": "INATIVO"
+  },
+  "allowDifferentSitesLabel": {
+    "message": "Permitir áudio de sites diferentes"
+  },
+  "exceptionsTitle": {
+    "message": "Exceções"
+  },
+  "exceptionsDesc": {
+    "message": "URLs ou domínios que <span style='font-weight:bold; color:#00f3ff;'>nunca</span> serão mutados automaticamente:"
+  },
+  "placeholderInput": {
+    "message": "Ex: youtube.com"
+  },
+  "addButton": {
+    "message": "Add"
+  },
+  "removeButton": {
+    "message": "Remover"
+  },
+  "noExceptions": {
+    "message": "Nenhuma exceção adicionada."
+  },
+  "supportButton": {
+    "message": "APOIAR O DEV"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "extensionName": {
+    "message": "Smart Mute Same-Site Tabs",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Automatically mute other tabs of the same site when a new one starts playing sound, with a whitelist option.",
+    "description": "Description of the extension"
+  },
+  "statusActive": {
+    "message": "ACTIVE"
+  },
+  "statusInactive": {
+    "message": "INACTIVE"
+  },
+  "allowDifferentSitesLabel": {
+    "message": "Allow audio from different sites"
+  },
+  "exceptionsTitle": {
+    "message": "Exceptions"
+  },
+  "exceptionsDesc": {
+    "message": "URLs or domains that will <span style='font-weight:bold; color:#00f3ff;'>never</span> be muted automatically:"
+  },
+  "placeholderInput": {
+    "message": "Ex: youtube.com"
+  },
+  "addButton": {
+    "message": "Add"
+  },
+  "removeButton": {
+    "message": "Remove"
+  },
+  "noExceptions": {
+    "message": "No exceptions added."
+  },
+  "supportButton": {
+    "message": "SUPPORT THE DEVS"
+  }
+}
